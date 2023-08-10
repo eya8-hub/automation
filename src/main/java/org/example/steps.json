@@ -1,0 +1,174 @@
+[
+  {
+    "step": 1,
+    "action": {
+      "type": "copy_to_folder",
+      "source": "docs/installation/pediatrics",
+      "destination": "conf"
+    }
+  },
+  {
+    "step": 2,
+    "action": {
+      "type": "copy_file_to_folder",
+      "source": "docs/installation/mire de callibrage#1593445419929.pdf",
+      "destination": "documents"
+    }
+  },
+  {
+    "step": 3,
+    "action": {
+      "type": "copy_to_folder",
+      "source": "docs/installation/pezz",
+      "destination": "documents"
+    }
+  },
+  {
+    "step": 4,
+    "action": {
+      "type": "set_property_configuration",
+      "category": "laboratory",
+      "propertyName": "medisupport_api_password",
+      "propertyValue": "xxxxxxx"
+    }
+  },
+  {
+    "step": 5,
+    "action": {
+      "type": "set_property_configuration",
+      "category": "transmission",
+      "propertyName": "google_fcm_serverkey_intellisokle",
+      "propertyValue": "AAAA...............AVTJ4Xy"
+    }
+  },
+  {
+    "step": 6,
+    "action": {
+      "type": "copy_file_to_folder",
+      "source": "docs/installation/covercard-test.properties",
+      "destination": "conf"
+    }
+  },
+  {
+    "step": 7,
+    "action": {
+      "type": "copy_file_to_folder",
+      "source": "module-covercard/docs/cert_ofac_covercard.p12",
+      "destination": "conf"
+    }
+  },
+  {
+    "step": 8,
+    "action": {
+      "type": "getVaultSecret",
+      "vaultUrl": "http://your-vault-url// Remplacez par l'URL de votre Vault",
+      "vaultToken": "your-vault-token// Remplacez par votre token Vault",
+      "secretPath": "secret/sokle// Remplacez par le chemin du secret 'sokle' dans votre Vault",
+      "propertyValue": "xxxxxx"
+    }
+  },
+  {
+    "step": 9,
+    "action": {
+      "type": "updateConfigValue",
+      "source": "conf/arsante.properties",
+      "propertyName": "emr_medforms_api_key",
+      "propertyValue": "xxxxxx"
+    }
+  },
+  {
+    "step": 10,
+    "action": {
+      "type": "updateConfigValue",
+      "source": "conf/sokle.properties",
+      "propertyName": "emr_medforms_api_key",
+      "propertyValue": "xxxxxx"
+    }
+  },
+
+
+
+
+  {
+    "step": 11,
+    "action": {
+      "type": "copy_file_to_folder",
+      "source": "docs/installation/google_api_credentials.json",
+      "destination": "conf"
+    }
+  },
+  {
+    "step": 12,
+    "action": {
+      "type": "copy_file_to_folder",
+      "source": "docs/installation/Guide-de-prise-de-main#1654772469410.pdf",
+      "destination": "documents"
+    }
+  },
+  {
+    "step": 13,
+    "action": {
+      "type": "copy_file_to_folder",
+      "source": "docs/installation/Attestation Mediserv destinée aux patients#1654772469411.pdf",
+      "destination": "documents"
+    }
+  },
+  {
+    "step": 14,
+    "action": {
+      "type": "tache_manuelle"
+    }
+  },
+  {
+    "step": 15,
+    "action": {
+      "type": "copy_to_folder",
+      "source": "docs/installation/surveys",
+      "destination": "conf/surveys"
+    }
+  },
+  {
+    "step": 16,
+    "action": {
+      "type": "copy_to_folder",
+      "source": "docs/installation/electronicsignature",
+      "destination": "conf"
+    }
+  },
+  {
+    "step": 17,
+    "action": {
+      "type": "tache_manuelle"
+    }
+  },
+  {
+    "step": 18,
+    "action": {
+      "type": "tache_manuelle"
+    }
+  },
+  {
+    "step": 19,
+    "action": {
+      "type": "tache_manuelle"
+    }
+  },
+  {
+    "step": 20,
+    "action": {
+      "type": "updateConfigValue",
+      "source": "conf/sokle.properties",
+      "propertyName": "mediserv.server.basicauth.token",
+      "propertyValue": "xxxxxx"
+    }
+  },
+  {
+    "step": 21,
+    "action": {
+      "type": "updateConfigValue",
+      "source": "conf/arsante.properties",
+      "propertyName": "mediserv.server.basicauth.token",
+      "propertyValue": "xxxxxx"
+    }
+  }
+]
